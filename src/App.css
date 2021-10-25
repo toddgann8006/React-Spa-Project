@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.first-image {
+    background-image: url("./images/massage-599532_960_720.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: scale(1.1, 1.1);
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .services-image{
+    background-image: url("./images/alan-caishan-cU53ZFBr3lk-unsplash-medium.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: scale(1.1, 1.1);
   }
-  to {
-    transform: rotate(360deg);
+
+  .appointment-image{
+    background-image: url("./images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: scale(1.1, 1.1);
   }
-}
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  padding-left: 150px;
+  padding-top: 150px; }
+
+.header-text {
+  color: #117182; }
+
+.paragraph-text {
+  color: #42afc2; }
+
+.h2-services {
+  padding-left: 150px;
+  padding-top: 150px; }
+
+.services-links {
+  text-decoration: none;
+  color: #42afc2; }
+
+.site-footer {
+  background-color: #42afc2; }
+
+.icons {
+  color: black; }
+
+.bg-1 {
+  background-color: #42afc2; }
+
+.make-appointment {
+  background-color: #42afc2;
+  text-decoration: none;
+  color: white; }
+
