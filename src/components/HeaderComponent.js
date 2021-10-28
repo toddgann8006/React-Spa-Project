@@ -42,7 +42,9 @@ class Header extends Component {
                                         </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
-                                        Waxing
+                                        <NavLink className="nav-link" to="/waxing">
+                                            Waxing
+                                        </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
                                         Body Treatment
