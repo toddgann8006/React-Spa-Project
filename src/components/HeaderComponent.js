@@ -32,10 +32,14 @@ class Header extends Component {
                                 </DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem>
-                                        Massage
+                                        <NavLink className="nav-link" to="/massage">
+                                            Massages
+                                        </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
-                                        Facials
+                                        <NavLink className="nav-link" to="/facials">
+                                            Facials
+                                        </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
                                         Waxing

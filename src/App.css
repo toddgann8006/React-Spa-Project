@@ -25,6 +25,24 @@
     transform: scale(1.1, 1.1);
   }
 
+  .massage-image {
+    background-image: url("./images/katherine-hanlon-83RTpUBjyYY-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: scale(1.1, 1.1);
+  }
+
+  .facials-image {
+    background-image: url("./images/facials.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: scale(1.1, 1.1);
+  }
+
 body {
   font-family: "Open Sans", sans-serif; }
 
