@@ -4,6 +4,7 @@ import Massage from './MassageComponent';
 import Facials from './FacialsComponent';
 import Waxing from './WaxingComponent';
 import Bodytreatments from './BodytreatmentsComponent';
+import About from './AboutComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
@@ -26,6 +27,7 @@ class Main extends Component {
                         <Route exact path='/facials' render={() => <Facials />} />
                         <Route exact path='/waxing' render={() => <Waxing />} />
                         <Route exact path='/bodytreatments' render={() => <Bodytreatments />} />
+                        <Route exact path='/about' render={() => <About />} />
                         <Redirect to='/home' />
                     </Switch>
                     <Footer />

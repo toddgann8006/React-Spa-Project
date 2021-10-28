@@ -1,76 +1,77 @@
 import React from 'react';
-import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
-import { Link } from 'react-router-dom';
-
 
 function About(props) {
-
-    const partners = props.partners.map(partner => {
-        return (
-            <h5>{partner.name}</h5>
-        );
-    });
-
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                    <Breadcrumb>
-                        <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                        <BreadcrumbItem active>About Us</BreadcrumbItem>
-                    </Breadcrumb>
-                    <h2>About Us</h2>
-                    <hr />
-                </div>
+        <div>
+            <div className="bg-image about-image img-fluid" style={{ height: '50vh' }}>
+                <h1 className="text-light">ABOUT US</h1>
             </div>
-            <div className="row row-content">
-                <div className="col-sm-6">
-                    <h3>Our Mission</h3>
-                    <p>We present a curated database of the best campsites in the vast woods and backcountry of the World Wide Web Wilderness. We increase access to adventure for the public while promoting safe and respectful use of resources. The expert wilderness trekkers on our staff personally verify each campsite to make sure that they are up to our standards. We also present a platform for campers to share reviews on campsites they have visited with each other.</p>
+            <div class="container">
+                <div class="row my-5 align-items-center">
+                    <div class="col-md col-md-content">
+                        <img class="img-fluid mb-auto" src="assets/images/sunny-ng-KVIlNRoGwxk-unsplash.jpg" />
+                    </div>
+                    <div class="col">
+                        <h3 class="header-text mt-4">About Healing Touch Day Spa</h3>
+                        <p class="mt-4 paragraph-text">
+                            Healing Touch Day Spa has set itself apart by using the latest products and techniques to provide a
+                            “resort type”
+                            spa experience. Give us an hour, two hours, or all day, and you will be
+                            transported on a mini vacation. Your time with us will be spent in a purely relaxed state leaving
+                            you feeling as if you have left Knoxville far behind and are enjoying a visit to a luxurious
+                            vacation resort. We use only the highest quality products for our skin care and body treatments.
+                        </p>
+                    </div>
                 </div>
-                <div className="col-sm-6">
-                    <Card>
-                        <CardHeader className="bg-primary text-white"><h3>Facts At a Glance</h3></CardHeader>
-                        <CardBody>
-                            <dl className="row">
-                                <dt className="col-6">Founded</dt>
-                                <dd className="col-6">February 3, 2016</dd>
-                                <dt className="col-6">No. of Campsites in 2019</dt>
-                                <dd className="col-6">563</dd>
-                                <dt className="col-6">No. of Reviews in 2019</dt>
-                                <dd className="col-6">4388</dd>
-                                <dt className="col-6">Employees</dt>
-                                <dd className="col-6">42</dd>
-                            </dl>
-                        </CardBody>
-                    </Card>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center header-text mb-5">Spa Etiquette</h2>
+                    </div>
                 </div>
-                <div className="col">
-                    <Card className="bg-light mt-3">
-                        <CardBody>
-                            <blockquote className="blockquote">
-                                <p className="mb-0">I will not follow where the path may lead, but I will go where there is no path, and I will leave a trail.</p>
-                                <footer className="blockquote-footer">Muriel Strode,{' '}
-                                    <cite title="Source Title">"Wind-Wafted Wild Flowers" -
-                                    The Open Court, 1903</cite>
-                                </footer>
-                            </blockquote>
-                        </CardBody>
-                    </Card>
+                <div class="row">
+                    <div class="col">
+                        <h3 class="header-text mb-3">Spa Reservations</h3>
+                        <p class="paragraph-text">
+                            To ensure your preferred appointment time, it is recommended you schedule your spa experience with
+                            as much advance notice as possible or at the conclusion of your last experience. Our professional
+                            staff allocates time especially for each guest, therefore, a credit card is requested to guarantee
+                            these reservations. All spa experiences are subject to availability. Menu service and prices are
+                            subject to change without notice. We reserve the right to refuse service to anyone.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div className="row row-content">
-                <div className="col-12">
-                    <h3>Community Partners</h3>
+                <div class="row">
+                    <div class="col mt-5">
+                        <h3 class="header-text mb-3">Spa Arrival</h3>
+                        <p class="paragraph-text">
+                            To begin your spa journey in a relaxed state, we ask that you arrive 15 minutes prior to your
+                            scheduled appointment time. For a new guest, please allow 30 minutes to accommodate completion of
+                            your guest profile. Spa robes, slippers, private lockers and beverages are provided for your
+                            comfort. Delayed arrival will limit the time for your experience, reducing the effectiveness of your
+                            treatment and the expectations of your visit. In consideration of other spa guests, service time
+                            will not be extended for delayed arrivals, and the full price of your service will be charged.
+                            Please notify our staff if there are any special physical or medical needs or conditions they need
+                            to consider prior to your services (i.e. pregnancy, food or product sensitivities or aggressive
+                            medications).
+                        </p>
+                    </div>
                 </div>
-                <div className="col mt-4">
-                    <Media list>
-                        {partners}
-                    </Media>
+                <div class="row">
+                    <div class="col my-5">
+                        <h3 class="header-text mb-3">Spa Cancellations or Rescheduling</h3>
+                        <p class="paragraph-text">
+                            As a courtesy, you will receive a confirmation of your reservation prior to your arrival. Should the
+                            need arise to cancel or reschedule reservations, a 24-hour advance notice is required. A 48-hour
+                            advance notice is required for any spa packages and multiple treatments lasting more than 2 hours.
+                            Insufficient notice to cancel or reschedule reservations are subject to charges up to full service
+                            value. All no show reservations will be assessed a charge at full value of services. Spa Parties are
+                            subject to terms of agreement for cancellations.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    );
+    )
 }
 
 export default About;
