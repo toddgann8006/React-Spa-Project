@@ -47,7 +47,9 @@ class Header extends Component {
                                         </NavLink>
                                     </DropdownItem>
                                     <DropdownItem>
-                                        Body Treatment
+                                        <NavLink className="nav-link" to="/bodytreatments">
+                                            Body Treatments
+                                        </NavLink>
                                     </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>

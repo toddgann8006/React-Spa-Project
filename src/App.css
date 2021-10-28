@@ -52,6 +52,15 @@
     transform: scale(1.1, 1.1);
   }
 
+  .bodytreatments-image {
+    background-image: url("./images/bodytreatment.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: scale(1.1, 1.1);
+  }
+
 body {
   font-family: "Open Sans", sans-serif; }
 
