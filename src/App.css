@@ -62,7 +62,7 @@
   }
 
   .about-image {
-    background-image: url("./images/joanna-kosinska-ToV0rS9nTYs-unsplash.jpg");
+    background-image: url("./images/aboutus.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,6 +72,15 @@
 
   .giftcards-image {
     background-image: url("./images/adam-winger-CBSCXFh_Vo4-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: scale(1.1, 1.1);
+  }
+
+  .contact-image {
+    background-image: url("./images/timothy-hales-bennett-OwvRB-M3GwE-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
