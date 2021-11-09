@@ -21,7 +21,7 @@ class Header extends Component {
     render() {
         return (
             <Navbar color="light" light expand="lg">
-                <div className="container">
+                <div className="container mb-4">
                     <NavbarBrand className="mr-auto mr-5" href="/"><img src="/assets/images/bf29e52dbe054dd181da0d3d14f38e7f.png" alt="Healing Logo" /></NavbarBrand>
                     <NavbarToggler onClick={this.toggleNav} />
                     <Collapse isOpen={this.state.isNavOpen} navbar>
