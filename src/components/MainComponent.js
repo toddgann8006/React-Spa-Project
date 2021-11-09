@@ -9,9 +9,17 @@ import Giftcards from './GiftcardsComponent';
 import Contact from './ContactComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
+import { MASSAGE } from '../shared/massage';
+import { FACIALS } from '../shared/facials';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            massage: MASSAGE
+        }
+    }
     render() {
         const HomePage = () => {
             return (
@@ -25,8 +33,8 @@ class Main extends Component {
                     <Header />
                     <Switch>
                         <Route path='/home' component={HomePage} />
-                        <Route exact path='/massage' render={() => <Massage />} />
-                        <Route exact path='/facials' render={() => <Facials />} />
+                        <Route exact path='/massage' render={() => <Massage massage={this.state.massage} />} />
+                        <Route exact path='/facials' render={() => <Facials facials={this.state.facials} />} />
                         <Route exact path='/waxing' render={() => <Waxing />} />
                         <Route exact path='/bodytreatments' render={() => <Bodytreatments />} />
                         <Route exact path='/about' render={() => <About />} />

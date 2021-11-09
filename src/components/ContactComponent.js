@@ -1,4 +1,5 @@
 import React from "react";
+import Contactform from "./ContactformComponent";
 
 function Contact(props) {
     return (

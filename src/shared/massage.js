@@ -1,4 +1,4 @@
-massage: [
+export const MASSAGE = [
     {
         id: 0,
         type: 'SWEDISH MASSAGE',
@@ -34,4 +34,4 @@ massage: [
         description: 'The strategic placement of hot stones on the body warms the muscles, allowing your therapist to go deeper while you are still enjoying a feeling of complete relaxation.',
         price: '90 minutes $145. 120 minutes $190.'
     }
-]
+];
