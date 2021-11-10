@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Appointment from './AppointmentComponent';
 import Services from './ServicesComponent';
 import Welcome from './WelcomeComponent';
 
-class Home extends Component{
-    render(){
+function Home(props) {
     return (
-        <div>
-          <Welcome />
-          <Services />
-          <Appointment />
-          </div>
-    )};
-}
+        <React.Fragment>
+            <Welcome />
+            <Services />
+            <Appointment />
+        </React.Fragment>
+    )
+};
 
-export default Home;   
+export default Home;
