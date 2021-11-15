@@ -116,7 +116,8 @@ h1 {
   color: black; }
 
 .bg-1 {
-  background-color: #42afc2; }
+  background-color: #42afc2;
+  text-decoration: none; }
 
 .make-appointment {
   background-color: #42afc2;

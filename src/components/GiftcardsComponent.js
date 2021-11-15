@@ -2,10 +2,8 @@ import React from "react";
 
 function Giftcards(props) {
     return (
-        <div>
-            <div className="bg-image giftcards-image img-fluid" style={{ height: '50vh' }}>
-                <h1 className="text-light">WAXING</h1>
-            </div>
+        <React.Fragment>
+            <GiftcardsHeader />
             <div class="container my-5 py-5">
                 <div class="row">
                     <div class="col text-center">
@@ -20,6 +18,14 @@ function Giftcards(props) {
                     </div>
                 </div>
             </div>
+        </React.Fragment>
+    )
+}
+
+function GiftcardsHeader(props) {
+    return (
+        <div className="bg-image giftcards-image img-fluid" style={{ height: '50vh' }}>
+            <h1 className="text-light">WAXING</h1>
         </div>
     )
 }

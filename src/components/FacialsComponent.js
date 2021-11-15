@@ -30,10 +30,8 @@ function Facials(props) {
     });
 
     return (
-        <div>
-            <div className="bg-image facials-image img-fluid" style={{ height: '50vh' }}>
-                <h1 className="text-light">FACIALS</h1>
-            </div>
+        <React.Fragment>
+            <FacialsHeader />
             <div className="container my-5 py-5">
                 <div className="row ps-5">
                     {facials}
@@ -46,7 +44,14 @@ function Facials(props) {
                     </div>
                 </div>
             </div>
+        </React.Fragment>
+    )
+}
 
+function FacialsHeader(props) {
+    return (
+        <div className="bg-image facials-image img-fluid" style={{ height: '50vh' }}>
+            <h1 className="text-light">FACIALS</h1>
         </div>
     )
 }

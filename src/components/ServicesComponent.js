@@ -50,10 +50,8 @@ class Services extends Component {
             );
         });
         return (
-            <div>
-                <div className="bg-image services-image img-fluid" style={{ height: '80vh' }}>
-                    <h1 className="text-light">SPA SERVICES</h1>
-                </div>
+            <React.Fragment>
+                <ServicesHeader />
                 <div className="bg-1">
                     <div className="container my-5 py-5">
                         <div className="row ps-5">
@@ -61,9 +59,16 @@ class Services extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </React.Fragment>
         )
     }
 }
 
+function ServicesHeader(props) {
+    return (
+        <div className="bg-image services-image img-fluid" style={{ height: '80vh' }}>
+            <h1 className="text-light">SPA SERVICES</h1>
+        </div>
+    )
+}
 export default Services

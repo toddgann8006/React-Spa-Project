@@ -2,10 +2,8 @@ import React from "react";
 
 function Waxing(props) {
     return (
-        <div>
-            <div className="bg-image waxing-image img-fluid" style={{ height: '50vh' }}>
-                <h1 className="text-light">WAXING</h1>
-            </div>
+        <React.Fragment>
+            <WaxingHeader />
             <div className="container">
                 <div className="row">
                     <div className="col pt-5 mt-5 d-flex justify-content-center">
@@ -83,6 +81,14 @@ function Waxing(props) {
                     </div>
                 </div>
             </div>
+        </React.Fragment>
+    )
+}
+
+function WaxingHeader(props) {
+    return (
+        <div className="bg-image waxing-image img-fluid" style={{ height: '50vh' }}>
+            <h1 className="text-light">WAXING</h1>
         </div>
     )
 }

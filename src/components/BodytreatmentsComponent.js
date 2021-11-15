@@ -2,10 +2,8 @@ import React from "react";
 
 function Bodytreatments(props) {
     return (
-        <div>
-            <div className="bg-image bodytreatments-image img-fluid" style={{ height: '50vh' }}>
-                <h1 className="text-light">WAXING</h1>
-            </div>
+        <React.Fragment>
+            <BodytreatmentsHeader />
             <div className="container">
                 <div className="row">
                     <div className="col pt-5 mt-5 d-flex justify-content-center">
@@ -163,6 +161,14 @@ function Bodytreatments(props) {
                     </div>
                 </div>
             </div>
+        </React.Fragment>
+    )
+}
+
+function BodytreatmentsHeader(props) {
+    return (
+        <div className="bg-image bodytreatments-image img-fluid" style={{ height: '50vh' }}>
+            <h1 className="text-light">WAXING</h1>
         </div>
     )
 }

@@ -3,12 +3,9 @@ import React, { Component } from 'react';
 class Welcome extends Component {
     render() {
         return (
-          
-            <div>
-                <div className="bg-image first-image img-fluid" style={{ height: '80vh'}}>
-                    <h1 className="text-light">We're Glad You're Here</h1>
-                </div>
 
+            <React.Fragment>
+                <WelcomeHeader />
                 <div className="container">
                     <div className="row justify-content-md-center">
                         <div className="col-md-6 my-5 py-5">
@@ -29,9 +26,17 @@ class Welcome extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </React.Fragment>
         )
     }
+}
+
+function WelcomeHeader(props) {
+    return (
+        <div className="bg-image first-image img-fluid" style={{ height: '80vh' }}>
+            <h1 className="text-light">We're Glad You're Here</h1>
+        </div>
+    )
 }
 
 export default Welcome;
