@@ -2,11 +2,9 @@ import React from 'react';
 
 function About(props) {
     return (
-        <div>
-            <div className="bg-image about-image img-fluid" style={{ height: '50vh' }}>
-                <h1 className="text-light">ABOUT US</h1>
-            </div>
-            <div class="container">
+        <React.Fragment>
+            <AboutHeader />
+            <div class="container-fluid">
                 <div class="row my-5 align-items-center">
                     <div class="col-md col-md-content">
                         <img class="img-fluid mb-auto" src="assets/images/sunny-ng-KVIlNRoGwxk-unsplash.jpg" />
@@ -70,6 +68,14 @@ function About(props) {
                     </div>
                 </div>
             </div>
+        </React.Fragment>
+    )
+}
+
+function AboutHeader(props) {
+    return (
+        <div className="bg-image about-image img-fluid" style={{ height: '50vh' }}>
+            <h1 className="text-light">ABOUT US</h1>
         </div>
     )
 }
