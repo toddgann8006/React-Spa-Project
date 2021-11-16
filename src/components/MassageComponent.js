@@ -1,35 +1,54 @@
-import React from 'react';
-import { Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
+import React, { Component } from 'react';
+import { Card, CardImg, CardBody, CardTitle, CardText, CardImgOverlay, Collapse } from 'reactstrap';
 
-function RenderMassageItem({ massages }) {
-    return (
-        <Card style={{ width: '18rem' }}>
-            <CardImg src={massages.image} alt={massages.type}
-                top width="100%" />
-            <CardBody>
-                <CardTitle className="header-text"><h5 className="text-center">{massages.type}</h5></CardTitle>
-                <CardText><p className="paragraph-text">
-                    {massages.description}
-                </p>
-                    <p>
-                        {massages.price60}
-                    </p>
-                    <p>
-                        {massages.price90}
-                    </p>
-                    <p>
-                        {massages.price120}
-                    </p>
-                </CardText>
-            </CardBody>
-        </Card>
-    )
+class RenderMassageItem extends Component {
+    constructor(props) {
+        super(props);
+        this.toggle = this.toggle.bind(this);
+        this.state = { collapse: false };
+    }
+
+    toggle() {
+        this.setState({ collapse: !this.state.collapse });
+    }
+
+    render() {
+        return (
+            <Card
+                onClick={this.toggle}
+                style={{ width: '38rem' }}>
+                <CardImg src={this.props.massages.image} alt={this.props.massages.type}
+                    top width="100%" />
+
+                <CardImgOverlay>
+                    <CardTitle className="header-text"><h3 className="text-center">{this.props.massages.type}</h3></CardTitle>
+                </CardImgOverlay>
+                <Collapse isOpen={this.state.collapse}>
+                    <CardBody>
+                        <CardText><p className="paragraph-text">
+                            {this.props.massages.description}
+                        </p>
+                            <p>
+                                {this.props.massages.price60}
+                            </p>
+                            <p>
+                                {this.props.massages.price90}
+                            </p>
+                            <p>
+                                {this.props.massages.price120}
+                            </p>
+                        </CardText>
+                    </CardBody>
+                </Collapse>
+            </Card>
+        )
+    }
 }
 
 function Massage(props) {
     const massage = props.massage.map(massages => {
         return (
-            <div key={massages.id} className="col-lg-6 mb-3 d-flex justify-content-center align-items-stretch">
+            <div key={massages.id} className="col-12 mb-3 d-flex justify-content-center align-items-stretch">
                 <RenderMassageItem massages={massages} />
             </div>
         );
